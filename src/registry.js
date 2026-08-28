@@ -13,7 +13,7 @@ import { splitOffset } from "./grammar.js";
  * a rule.
  */
 
-/** Commands that introduce a name. Classes and terrains are numbered, not named. */
+/** Commands that create a thing and name it in one stroke. */
 const DEFINING_COMMANDS = {
   newmonster: "monster",
   newweapon: "weapon",
@@ -22,19 +22,42 @@ const DEFINING_COMMANDS = {
 };
 
 /**
+ * Commands that give a name to whatever object is already active, so the kind
+ * comes from the active section, not from the command. `name` means monster,
+ * item or terrain depending on where it appears; `setclassname` is how a class,
+ * otherwise reached by number, gets a name at all.
+ */
+const NAMING_COMMANDS = new Set(["name", "setname", "setclassname"]);
+
+/**
  * @param {import("./statements.js").Statement[]} statements
  */
 export function buildRegistry(statements) {
-  const defined = { monster: new Map(), weapon: new Map(), item: new Map(), ritual: new Map() };
+  const defined = {
+    monster: new Map(),
+    weapon: new Map(),
+    item: new Map(),
+    ritual: new Map(),
+    class: new Map(),
+  };
   const terrains = new Set();
   const duplicates = [];
   let ritualSchools = 0;
 
   for (const statement of statements) {
-    const kind = DEFINING_COMMANDS[statement.name];
+    // `opens` is the single source of truth for "this command moved the
+    // pointer": a `newitem` acting inside an event defines nothing.
+    const kind = statement.opens ? DEFINING_COMMANDS[statement.name] : undefined;
 
     if (kind) {
       recordDefinition(defined[kind], kind, statement, duplicates);
+      continue;
+    }
+
+    // Terrains and terrain groups have no bucket because nothing refers to
+    // either by name, so their naming commands fall through here.
+    if (NAMING_COMMANDS.has(statement.name) && defined[statement.section]) {
+      recordName(defined[statement.section], statement);
       continue;
     }
 
@@ -94,6 +117,25 @@ function recordDefinition(bucket, kind, statement, duplicates) {
     duplicates.push({ kind, statement, token: nameToken, firstSeen: existing.line });
     return;
   }
+
+  bucket.set(key, { line: statement.line, copies: 1 });
+}
+
+/**
+ * A rename is recorded additively: the old name stays registered alongside the
+ * new one. Whether the engine drops the old name is not documented, and
+ * dropping it here would invent errors on working mods, while keeping it only
+ * risks missing one.
+ *
+ * Renames also stay out of `duplicates`: the offset form the duplicate hint
+ * suggests is meaningless for a class and misleading for a rename.
+ */
+function recordName(bucket, statement) {
+  const nameToken = statement.args[0];
+  if (nameToken?.type !== "string") return;
+
+  const key = fold(nameToken.value);
+  if (bucket.has(key)) return;
 
   bucket.set(key, { line: statement.line, copies: 1 });
 }
