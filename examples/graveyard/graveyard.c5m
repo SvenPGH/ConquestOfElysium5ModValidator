@@ -1,0 +1,27 @@
+icon "banner.tga"
+description "Demo mod"
+
+newmonster "Bone Sentinel"
+meleeweapon 4 "Grave Iron"
+hp 14
+mr 11
+undead
+
+newweapon "Grave Iron"
+dmg 7
+
+newclass
+classdescr "A demo class"
+setclassname "Gravekeeper"
+hometerr 30
+setmaincom "Bone Sentinal"
+addunitrec "Bone Sentinel" 100 3 20 5
+reclimiter "Bone Sentinel"
+
+newritpow
+newritual "Raise Sentinels"
+level 2
+cost 4 25
+addstring "1d3*Bone Sentinel & 2*Grave Wisp"
+summoning
+hometerr 30

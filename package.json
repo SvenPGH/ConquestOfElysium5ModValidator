@@ -1,0 +1,15 @@
+{
+  "name": "coe5-modcheck",
+  "version": "1.0.0",
+  "description": "Validator for Conquest of Elysium 5 .c5m mod files",
+  "type": "module",
+  "bin": { "coe5-modcheck": "bin/coe5-modcheck.js" },
+  "exports": "./src/index.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test 'test/*.test.js'",
+    "build:data": "node tools/build-commands.mjs ./reference"
+  },
+  "files": ["bin", "src", "data", "README.md", "LICENSE"],
+  "license": "MIT"
+}
