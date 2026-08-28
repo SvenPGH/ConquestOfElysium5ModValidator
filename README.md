@@ -1,4 +1,4 @@
-# coe5-modcheck
+# Conquest of Elysium 5 Mod validator
 
 A validator for Conquest of Elysium 5 mod files. Point it at your mod and it
 tells you what is wrong with it, with a line number.
