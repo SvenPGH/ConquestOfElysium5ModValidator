@@ -13,6 +13,20 @@ import { label } from "../sections.js";
 
 const KINDS = ["monster", "weapon", "item", "ritual", "class"];
 
+/**
+ * "Mod commands are executed from the beginning of the file to the end of the
+ * file. Make sure that commands that are prerequisites for others appear
+ * before the commands that require them. For example, modding a new weapon
+ * must be done before assigning it to a new monster (or an existing monster)
+ * or the mod will crash."
+ *
+ * That is the one forward reference the manual promises will crash. Whether
+ * the others crash or misbehave quietly is undocumented, so they report under
+ * `forward-reference`, which can be turned down while the documented crash
+ * stays loud. A future manual naming another crashing case goes in this list.
+ */
+const CRASHING_FORWARD_REFERENCES = [{ ref: "weapon", section: "monster" }];
+
 export const levels = {
   "unknown-monster": "error",
   "unknown-weapon": "error",
@@ -20,6 +34,7 @@ export const levels = {
   "unknown-ritual": "error",
   "unknown-class": "error",
   "use-before-define": "error",
+  "forward-reference": "error",
   "bad-offset": "warning",
 };
 
@@ -44,11 +59,14 @@ export function check({ statements, registry }, bag) {
     }
 
     if (isForwardReference(found, statement)) {
+      const crashes = willCrash(kind, statement);
       bag.report({
-        rule: "use-before-define",
+        rule: crashes ? "use-before-define" : "forward-reference",
         at,
         message: `"${token.value}" is not defined until line ${found.definedAt}`,
-        hint: "mod commands run top to bottom, referring forward crashes the game",
+        hint: crashes
+          ? 'move the weapon above this line, "or the mod will crash"'
+          : "mod commands run top to bottom, move the definition above this line",
       });
     }
 
@@ -68,6 +86,12 @@ export function check({ statements, registry }, bag) {
  */
 function isForwardReference(found, statement) {
   return !found.inBaseGame && found.definedAt !== null && found.definedAt > statement.line;
+}
+
+function willCrash(kind, statement) {
+  return CRASHING_FORWARD_REFERENCES.some(
+    (crash) => crash.ref === kind && crash.section === statement.section,
+  );
 }
 
 /** Only checkable for mod defined names; the base game index is not tracked per name. */

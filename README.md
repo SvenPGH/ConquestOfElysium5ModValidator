@@ -69,8 +69,12 @@ says so.
 
 **Names.** Every monster, weapon, magic item, ritual and class you name is
 checked against the base game plus everything your own mod has defined *above*
-that line. Referring to something you define later is an error, because that is
-one of the few things the manual promises will crash the game. Terrain numbers,
+that line, including names given after the fact with `name`, `setname` and
+`setclassname`. Referring to something you define later is an error. Assigning
+a weapon to a monster before the weapon exists is the one case the manual
+promises will crash the game and reports as `use-before-define`; every other
+forward reference reports as `forward-reference`, which can be turned down if
+you know better than the checker does. Terrain numbers,
 resource types, player numbers and ritual school numbers are range checked.
 Summon strings like `"c*Captain & 2d6*Spearman"` and recruitment conditions like
 `"+Baron"` are pulled apart and the names inside them checked too.
@@ -98,6 +102,7 @@ Any check can be turned down or off if it is wrong about your mod:
 
 ```
 node bin/coe5-modcheck.js mods/mymod -r duplicate-name=off
+node bin/coe5-modcheck.js mods/mymod -r forward-reference=warning
 ```
 
 The exit code is 1 when something is wrong, so this drops straight into a build

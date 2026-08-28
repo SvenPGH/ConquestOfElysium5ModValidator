@@ -1,5 +1,5 @@
 import { tokenizeLine } from "./tokenizer.js";
-import { OPENERS, CLOSERS } from "./sections.js";
+import { OPENERS, CLOSERS, opensSection } from "./sections.js";
 
 /**
  * Reads a source file into a list of statements, each carrying the section that
@@ -71,7 +71,7 @@ export function readStatements(source) {
       return;
     }
 
-    if (OPENERS[name]) {
+    if (opensSection(name, section)) {
       // Moving the pointer while an event is open abandons it silently. The
       // engine will not object; the event just never runs as written.
       if (section === "event" && OPENERS[name] !== "event") {
