@@ -36,6 +36,21 @@ export const OPENERS = {
 };
 
 /**
+ * Opener names that mean something else inside particular sections. Inside an
+ * event, `newitem` "gives a specific magic item to the target unit" (manual
+ * p40) instead of creating one (p10), so there it must not move the pointer.
+ */
+const ACTION_CONTEXTS = {
+  newitem: ["event"],
+};
+
+/** Does this command move the active object pointer, given the section it appears in? */
+export function opensSection(name, section) {
+  if (!OPENERS[name]) return false;
+  return !(ACTION_CONTEXTS[name]?.includes(section) ?? false);
+}
+
+/**
  * Events are the only construct with a real terminator: "All events must end
  * with this command." Everything else runs until the pointer moves.
  */
