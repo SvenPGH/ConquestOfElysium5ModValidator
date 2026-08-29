@@ -30,8 +30,11 @@ export function lookupCommand(name) {
   return commands[name] ?? null;
 }
 
+/** Names the extraction uses for commands the game spells differently. */
+const RENAMED = { siegeable: "walls" };
+
 export function suggestCommand(name) {
-  return closestMatch(name, commandNames);
+  return RENAMED[name] ?? closestMatch(name, commandNames);
 }
 
 /**

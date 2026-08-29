@@ -33,8 +33,8 @@ test("weapon data", { skip: !available("weapon") }, () => {
 });
 
 test("terrain data", { skip: !available("terrain") }, () => {
-  // siegeable and eastcoast are absent from the manual.
-  assert.deepEqual([...reported("terrain")], ["undocumented-command"]);
+  // eastcoast is absent from the manual; siegeable is not a game command.
+  assert.deepEqual([...reported("terrain")].sort(), ["undocumented-command", "unknown-command"]);
 });
 
 test("magic item data", { skip: !available("magic-item") }, () => {
