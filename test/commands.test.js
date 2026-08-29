@@ -43,8 +43,15 @@ test("documented ranges are checked", () => {
 });
 
 test("commands the base game uses but the manual omits are flagged", () => {
-  const problem = firstProblem("selectterr 30\nsiegeable");
+  const problem = firstProblem("selectterr 30\neastcoast");
 
   assert.equal(problem.rule, "undocumented-command");
   assert.match(problem.hint, /base game data/);
+});
+
+test("siegeable suggests walls", () => {
+  const problem = firstProblem("selectterr 30\nsiegeable");
+
+  assert.equal(problem.rule, "unknown-command");
+  assert.match(problem.hint, /walls/);
 });

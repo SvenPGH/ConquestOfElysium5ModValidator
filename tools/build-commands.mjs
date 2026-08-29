@@ -369,6 +369,12 @@ vanilla.resources = ["gold", "iron", "herbs", "fungus", "sacr", "hands", "weed",
   "air", "earth", "trade", "relics", "lifeforce", "human corpses", "gems", "expendable units",
   "corpses", "goblins"];
 
+// The extraction writes `siegeable` for what the game calls `walls`.
+if (commands.siegeable) {
+  commands.walls.attested += commands.siegeable.attested;
+  delete commands.siegeable;
+}
+
 const meta = {
   generated: new Date().toISOString().slice(0, 10),
   manual: "Illwinter CoE5 Modding Manual v5.36",
