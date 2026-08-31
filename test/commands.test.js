@@ -55,3 +55,8 @@ test("siegeable suggests walls", () => {
   assert.equal(problem.rule, "unknown-command");
   assert.match(problem.hint, /walls/);
 });
+
+test("a command documented per section accepts each section's shape", () => {
+  assertClean("squareevent\ncureoneaff\nendevent");
+  assertClean('newritual "Mend"\ncureoneaff 50');
+});
