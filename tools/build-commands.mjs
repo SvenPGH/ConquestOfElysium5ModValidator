@@ -327,12 +327,12 @@ for (const name of [...names].sort()) {
     const vMin = Math.min(...shapes.map((s) => s.length));
     const vMax = Math.max(...shapes.map((s) => s.length));
     if (vMin < arity.min) {
-      notes.push(`manual shows ${arity.min} required arg(s); vanilla omits down to ${vMin}`);
+      notes.push(`manual lists ${arity.min} required argument(s); the data source omits down to ${vMin}`);
       for (let i = vMin; i < args.length; i++) args[i].optional = true;
       arity.min = vMin;
     }
     if (vMax > arity.max) {
-      notes.push(`manual documents ${arity.max} arg(s); all vanilla uses pass up to ${vMax}`);
+      notes.push(`manual documents ${arity.max} argument(s); the data source passes up to ${vMax}`);
       for (let i = args.length; i < vMax; i++) {
         const seen = [...new Set(shapes.map((sh) => sh[i]).filter(Boolean))]
           .map((ch) => (ch === "s" ? "str" : ch === "n" ? "int" : "word"));
@@ -347,7 +347,7 @@ for (const name of [...names].sort()) {
         const a = args[i];
         if (a && !a.types.includes(want)) {
           a.types.push(want);
-          notes.push(`arg ${i + 1} (${a.name}) documented as ${a.types.filter((t) => t !== want).join("|")}, vanilla also passes ${want}`);
+          notes.push(`argument ${i + 1} (${a.name}) is documented as ${a.types.filter((t) => t !== want).join("|")}; the data source also passes ${want}`);
         }
       });
     }
@@ -360,7 +360,7 @@ for (const name of [...names].sort()) {
     const vMax = Math.max(...shapes.map((s) => s.length));
     arity = { min: 0, max: vMax };
     for (let i = 0; i < vMax; i++) args.push({ name: i === 0 ? "0-1" : `arg${i + 1}`, types: ["int", "str"], optional: true, undocumented: true });
-    if (vMax > 0) notes.push("manual documents this as a bare flag; the rips pass an explicit on/off value");
+    if (vMax > 0) notes.push("manual documents this as a bare flag; the data source passes an explicit on/off value");
   }
 
   const pages = [...new Set([...(index[name] ?? []), ...recs.map((r) => r.page)])].sort((a, b) => a - b);
