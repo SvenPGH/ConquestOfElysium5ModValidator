@@ -2,11 +2,11 @@
 // Regenerates data/commands.json from Illwinter's modding manual (text extraction)
 // and Colonel Dracula's vanilla data rips.
 //
-//   node tools/build-commands.mjs <reference-dir> [out-dir]
+//   node tools/build-commands.mjs <reference-dir[:reference-dir...]> [out-dir]
 //
-// The reference dir must contain:
+// The reference dirs together must contain:
 //   reference_coe5-modding-manual-v5_36.txt
-//   reference_{weapon,magic-item,monster,class,terrain,recruitment,ritual}-data-v5_22_c5m.txt
+//   {Weapon,Magic_Item,Monster,Class,Terrain,Recruitment,Ritual}_Data_v5.33.c5m
 //
 // Three sources are merged, in this order of authority:
 //   1. manual body       - argument signatures, canonical spelling
@@ -19,22 +19,22 @@ import fs from "node:fs";
 import path from "node:path";
 import { tokenizeLine } from "../src/tokenizer.js";
 
-const REF = process.argv[2];
+const REFS = process.argv[2]?.split(path.delimiter);
 const OUT = process.argv[3] ?? path.join(import.meta.dirname, "..", "data");
-if (!REF) {
-  console.error("usage: build-commands.mjs <reference-dir> [out-dir]");
+if (!REFS) {
+  console.error("usage: build-commands.mjs <reference-dir[:reference-dir...]> [out-dir]");
   process.exit(2);
 }
 
 const MANUAL = "reference_coe5-modding-manual-v5_36.txt";
 const RIPS = {
-  weapon: "reference_weapon-data-v5_22_c5m.txt",
-  item: "reference_magic-item-data-v5_22_c5m.txt",
-  monster: "reference_monster-data-v5_22_c5m.txt",
-  class: "reference_class-data-v5_22_c5m.txt",
-  terrain: "reference_terrain-data-v5_22_c5m.txt",
-  recruitment: "reference_recruitment-data-v5_22_c5m.txt",
-  ritual: "reference_ritual-data-v5_22_c5m.txt",
+  weapon: "Weapon_Data_v5.33.c5m",
+  item: "Magic_Item_Data_v5.33.c5m",
+  monster: "Monster_Data_v5.33.c5m",
+  class: "Class_Data_v5.33.c5m",
+  terrain: "Terrain_Data_v5.33.c5m",
+  recruitment: "Recruitment_Data_v5.33.c5m",
+  ritual: "Ritual_Data_v5.33.c5m",
 };
 
 const OPENERS = {
@@ -47,7 +47,15 @@ const OPENERS = {
   playerevent: "event", squareevent: "event",
 };
 
-const read = (f) => fs.readFileSync(path.join(REF, f), "utf8").split(/\r?\n/);
+// The manual and the rips may live in different directories: each file is
+// looked up in every given reference dir, first hit wins.
+const read = (f) => {
+  for (const dir of REFS) {
+    const p = path.join(dir, f);
+    if (fs.existsSync(p)) return fs.readFileSync(p, "utf8").split(/\r?\n/);
+  }
+  throw new Error(`${f} not found in ${REFS.join(", ")}`);
+};
 
 /**
  * Split a pdftotext -layout line into its column segments.
@@ -434,7 +442,7 @@ if (commands.siegeable) {
 const meta = {
   generated: new Date().toISOString().slice(0, 10),
   manual: "Illwinter CoE5 Modding Manual v5.36",
-  rips: "Colonel Dracula CoE5 data extraction v5.22",
+  rips: "Colonel Dracula CoE5 data extraction v5.33",
   commands: Object.keys(commands).length,
   documented: Object.values(commands).filter((c) => c.documented).length,
   attested: Object.values(commands).filter((c) => c.attested > 0).length,

@@ -13,10 +13,18 @@ import { lintSource } from "../src/linter.js";
  * Skipped unless the reference files are present, since they are not vendored.
  */
 
-const REFERENCE = "reference";
+const REFERENCE = process.env.COE5_REFERENCE ?? "reference";
 
-const available = (name) => fs.existsSync(path.join(REFERENCE, `reference_${name}-data-v5_22_c5m.txt`));
-const rip = (name) => fs.readFileSync(path.join(REFERENCE, `reference_${name}-data-v5_22_c5m.txt`), "utf8");
+const FILES = {
+  ritual: "Ritual_Data_v5.33.c5m",
+  weapon: "Weapon_Data_v5.33.c5m",
+  terrain: "Terrain_Data_v5.33.c5m",
+  "magic-item": "Magic_Item_Data_v5.33.c5m",
+  recruitment: "Recruitment_Data_v5.33.c5m",
+};
+
+const available = (name) => fs.existsSync(path.join(REFERENCE, FILES[name]));
+const rip = (name) => fs.readFileSync(path.join(REFERENCE, FILES[name]), "utf8");
 const reported = (name) => new Set(lintSource(rip(name)).map((diagnostic) => diagnostic.rule));
 
 test("ritual data", { skip: !available("ritual") }, () => {

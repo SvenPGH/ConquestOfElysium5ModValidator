@@ -11,7 +11,7 @@ test("an unknown command suggests a spelling", () => {
 
 test("arity follows the manual, widened by the base game data", () => {
   assertClean('newmonster "X"\nmr 10');
-  assertClean('newmonster "X"\nfear');      // documented with an argument, base game omits it
+  assertClean('newmonster "X"\ndisplaced'); // documented with an argument, base game omits it
   assertClean('newmonster "X"\npower 6 2'); // documented with one, base game always passes two
 
   assert.deepEqual(rulesOf('newmonster "X"\nhp'), ["arity"]);

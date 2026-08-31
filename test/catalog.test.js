@@ -11,7 +11,7 @@ test("the command table covers the manual and the base game data", () => {
 
 test("the widening rules survived generation", () => {
   assert.equal(commands.power.arity.max, 2, "power is written with two arguments everywhere");
-  assert.equal(commands.fear.arity.min, 0, "fear is often written bare");
+  assert.equal(commands.displaced.arity.min, 0, "displaced is often written bare");
   assert.ok(commands.meleeweapon.args[1].types.includes("int"), "a weapon may be named by index");
 });
 

@@ -46,8 +46,12 @@ export const patterns = {
    */
   summonQualifier: /^\([^)]*\)/,
 
-  /** Count prefix: 3*, 2d6*, 2d4+2*, or c* for a commander. */
-  summonCount: /^(?:c|\d+|\d+d\d+(?:[+-]\d+)?)\*/,
+  /**
+   * Count prefix: 3*, 2d6*, 2d4+2*, or c* for a commander. The letters
+   * u/U/y/Y summon a single unit capped at 1/2/3/4 of that monster already
+   * in the square (per the data source's own annotations).
+   */
+  summonCount: /^(?:c|[uUyY]|\d+|\d+d\d+(?:[+-]\d+)?)\*/,
 
   /**
    * An addstring naming a magic item for ritequipall rather than a monster to
