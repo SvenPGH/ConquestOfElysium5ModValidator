@@ -2,10 +2,10 @@
  "meta": {
   "generated": "2026-08-31",
   "manual": "Illwinter CoE5 Modding Manual v5.36",
-  "rips": "Colonel Dracula CoE5 data extraction v5.22",
+  "rips": "Colonel Dracula CoE5 data extraction v5.33",
   "commands": 852,
   "documented": 850,
-  "attested": 539
+  "attested": 630
  },
  "commands": {
   "+aiplayer": {
@@ -1067,7 +1067,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "acidblood": {
    "sections": [
@@ -1093,7 +1093,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "acidres": {
    "sections": [
@@ -1119,7 +1119,7 @@
     21
    ],
    "documented": true,
-   "attested": 7
+   "attested": 9
   },
   "acutesenses": {
    "sections": [
@@ -1137,7 +1137,7 @@
     19
    ],
    "documented": true,
-   "attested": 73
+   "attested": 81
   },
   "addallforests": {
    "sections": [
@@ -1241,7 +1241,7 @@
     28
    ],
    "documented": true,
-   "attested": 144
+   "attested": 146
   },
   "addeventvar": {
    "sections": [
@@ -1326,9 +1326,9 @@
     27
    ],
    "documented": true,
-   "attested": 31,
+   "attested": 32,
    "notes": [
-    "manual documents 5 arg(s); all vanilla uses pass up to 6"
+    "manual documents 5 argument(s); the data source passes up to 6"
    ]
   },
   "addresources": {
@@ -1396,7 +1396,7 @@
     27
    ],
    "documented": true,
-   "attested": 27
+   "attested": 28
   },
   "addstartterr": {
    "sections": [
@@ -1421,7 +1421,7 @@
     27
    ],
    "documented": true,
-   "attested": 34
+   "attested": 36
   },
   "addstartunits": {
    "sections": [
@@ -1455,7 +1455,7 @@
     27
    ],
    "documented": true,
-   "attested": 78
+   "attested": 82
   },
   "addstring": {
    "sections": [
@@ -1482,7 +1482,7 @@
     33
    ],
    "documented": true,
-   "attested": 937
+   "attested": 959
   },
   "addterr": {
    "sections": [
@@ -1568,7 +1568,7 @@
     27
    ],
    "documented": true,
-   "attested": 253
+   "attested": 262
   },
   "addvar": {
    "sections": [
@@ -1689,7 +1689,7 @@
     21
    ],
    "documented": true,
-   "attested": 0
+   "attested": 241
   },
   "afftarg": {
    "sections": [
@@ -1771,7 +1771,7 @@
     17
    ],
    "documented": true,
-   "attested": 2
+   "attested": 4
   },
   "aialways": {
    "sections": [
@@ -1795,7 +1795,7 @@
     37
    ],
    "documented": true,
-   "attested": 66
+   "attested": 68
   },
   "aiapprspam": {
    "sections": [
@@ -1867,7 +1867,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "aihold": {
    "sections": [
@@ -1891,7 +1891,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 13
   },
   "aimaxcast": {
    "sections": [
@@ -1939,7 +1939,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 11
   },
   "ainofollower": {
    "sections": [
@@ -1975,8 +1975,8 @@
    "documented": true,
    "attested": 4,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "ainosimul": {
@@ -2013,8 +2013,8 @@
    "documented": true,
    "attested": 25,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "ainotclose1": {
@@ -2189,7 +2189,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "aipowcom2": {
    "sections": [
@@ -2215,7 +2215,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "aipowcom3": {
    "sections": [
@@ -2241,7 +2241,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "airare": {
    "sections": [
@@ -2291,7 +2291,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "airestrig": {
    "sections": [
@@ -2413,7 +2413,7 @@
     37
    ],
    "documented": true,
-   "attested": 0
+   "attested": 11
   },
   "allitemslots": {
    "sections": [
@@ -2429,7 +2429,7 @@
     21
    ],
    "documented": true,
-   "attested": 737
+   "attested": 818
   },
   "allrit": {
    "sections": [
@@ -2453,7 +2453,7 @@
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 13
   },
   "alone": {
    "sections": [
@@ -2502,7 +2502,7 @@
     36
    ],
    "documented": true,
-   "attested": 28
+   "attested": 29
   },
   "alterterrain": {
    "sections": [
@@ -2543,7 +2543,7 @@
     5
    ],
    "documented": true,
-   "attested": 339
+   "attested": 341
   },
   "ancforest1": {
    "sections": [
@@ -2595,7 +2595,7 @@
     20
    ],
    "documented": true,
-   "attested": 136
+   "attested": 138
   },
   "aoe": {
    "sections": [
@@ -2619,7 +2619,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "apcost": {
    "sections": [
@@ -2645,7 +2645,7 @@
     35
    ],
    "documented": true,
-   "attested": 458
+   "attested": 461
   },
   "ape": {
    "sections": [
@@ -2695,7 +2695,7 @@
     14
    ],
    "documented": true,
-   "attested": 1799
+   "attested": 1871
   },
   "armytrainer": {
    "sections": [
@@ -2738,7 +2738,7 @@
     5
    ],
    "documented": true,
-   "attested": 30
+   "attested": 31
   },
   "assassinweapon": {
    "sections": [
@@ -2771,9 +2771,9 @@
     15
    ],
    "documented": true,
-   "attested": 28,
+   "attested": 39,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "atavirec": {
@@ -2828,8 +2828,8 @@
    "documented": true,
    "attested": 3,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "awakenfungus": {
@@ -2856,7 +2856,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "awakentrees": {
    "sections": [
@@ -2882,7 +2882,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "awe": {
    "sections": [
@@ -3008,7 +3008,7 @@
     30
    ],
    "documented": true,
-   "attested": 165
+   "attested": 168
   },
   "battlefast": {
    "sections": [
@@ -3062,7 +3062,7 @@
     16
    ],
    "documented": true,
-   "attested": 33
+   "attested": 36
   },
   "benrestrict": {
    "sections": [
@@ -3176,7 +3176,7 @@
     21
    ],
    "documented": true,
-   "attested": 51
+   "attested": 53
   },
   "blue": {
    "sections": [
@@ -3210,7 +3210,7 @@
     21
    ],
    "documented": true,
-   "attested": 249
+   "attested": 251
   },
   "bonusrelics": {
    "sections": [
@@ -3316,7 +3316,7 @@
     34
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "castertarg": {
    "sections": [
@@ -3396,7 +3396,7 @@
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 11
   },
   "celwander2": {
    "sections": [
@@ -3478,7 +3478,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 12
   },
   "changeowner": {
    "sections": [
@@ -3547,7 +3547,7 @@
     21
    ],
    "documented": true,
-   "attested": 648
+   "attested": 651
   },
   "choosefxtarg": {
    "sections": [
@@ -3665,7 +3665,7 @@
     31
    ],
    "documented": true,
-   "attested": 113
+   "attested": 114
   },
   "cityname": {
    "sections": [
@@ -3705,7 +3705,7 @@
     27
    ],
    "documented": true,
-   "attested": 26
+   "attested": 27
   },
   "classcitterr": {
    "sections": [
@@ -3780,7 +3780,7 @@
     27
    ],
    "documented": true,
-   "attested": 26
+   "attested": 27
   },
   "classforestcit": {
    "sections": [
@@ -4093,7 +4093,7 @@
     37
    ],
    "documented": true,
-   "attested": 40
+   "attested": 39
   },
   "cloudgate": {
    "sections": [
@@ -4215,7 +4215,7 @@
     19
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "coldres": {
    "sections": [
@@ -4241,7 +4241,7 @@
     20
    ],
    "documented": true,
-   "attested": 651
+   "attested": 659
   },
   "colonymsg": {
    "sections": [
@@ -4267,7 +4267,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "colonyterr": {
    "sections": [
@@ -4293,7 +4293,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "combatspell": {
    "sections": [
@@ -4324,7 +4324,7 @@
     10
    ],
    "documented": true,
-   "attested": 26
+   "attested": 27
   },
   "combatsum": {
    "sections": [
@@ -4356,7 +4356,7 @@
     10
    ],
    "documented": true,
-   "attested": 37
+   "attested": 45
   },
   "combustionaura": {
    "sections": [
@@ -4432,7 +4432,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "copyritual": {
    "sections": [
@@ -4578,7 +4578,7 @@
     34
    ],
    "documented": true,
-   "attested": 655
+   "attested": 712
   },
   "createcit": {
    "sections": [
@@ -4672,7 +4672,7 @@
     10
    ],
    "documented": true,
-   "attested": 15
+   "attested": 22
   },
   "darkbless": {
    "sections": [
@@ -4724,7 +4724,7 @@
     29
    ],
    "documented": true,
-   "attested": 176
+   "attested": 174
   },
   "deadforest1": {
    "sections": [
@@ -4786,7 +4786,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "deepspawn": {
    "sections": [
@@ -4898,7 +4898,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "descr": {
    "sections": [
@@ -4925,7 +4925,7 @@
     14
    ],
    "documented": true,
-   "attested": 2351
+   "attested": 2456
   },
   "description": {
    "sections": [
@@ -5146,8 +5146,8 @@
    "documented": true,
    "attested": 26,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "destroyto": {
@@ -5199,7 +5199,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 4
   },
   "diseasecloud": {
    "sections": [
@@ -5225,7 +5225,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "diseaseres": {
    "sections": [
@@ -5243,7 +5243,7 @@
     21
    ],
    "documented": true,
-   "attested": 624
+   "attested": 625
   },
   "diseaseshield": {
    "sections": [
@@ -5299,7 +5299,7 @@
    "documented": true,
    "attested": 4,
    "notes": [
-    "manual shows 1 required arg(s); vanilla omits down to 0"
+    "manual lists 1 required argument(s); the data source omits down to 0"
    ]
   },
   "dispossess": {
@@ -5340,7 +5340,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "dmgonterr": {
    "sections": [
@@ -5417,7 +5417,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "dragon": {
    "sections": [
@@ -5446,7 +5446,7 @@
     26
    ],
    "documented": true,
-   "attested": 8
+   "attested": 12
   },
   "drain": {
    "sections": [
@@ -5462,7 +5462,7 @@
     5
    ],
    "documented": true,
-   "attested": 15
+   "attested": 16
   },
   "drawsize": {
    "sections": [
@@ -5532,7 +5532,7 @@
    },
    "pages": [],
    "documented": false,
-   "attested": 1
+   "attested": 2
   },
   "easymr": {
    "sections": [
@@ -5600,7 +5600,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "eatvillage": {
    "sections": [
@@ -5628,7 +5628,7 @@
     19
    ],
    "documented": true,
-   "attested": 0
+   "attested": 9
   },
   "el": {
    "sections": [
@@ -5732,7 +5732,7 @@
     34
    ],
    "documented": true,
-   "attested": 5
+   "attested": 20
   },
   "enchreqterr": {
    "sections": [
@@ -5757,7 +5757,7 @@
     37
    ],
    "documented": true,
-   "attested": 4
+   "attested": 25
   },
   "endevent": {
    "sections": [
@@ -5794,7 +5794,7 @@
     21
    ],
    "documented": true,
-   "attested": 229
+   "attested": 231
   },
   "evasion": {
    "sections": [
@@ -5924,7 +5924,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 81
   },
   "failplayer": {
    "sections": [
@@ -5985,8 +5985,8 @@
    "documented": true,
    "attested": 1,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "farsight": {
@@ -6017,7 +6017,7 @@
     30
    ],
    "documented": true,
-   "attested": 68,
+   "attested": 69,
    "notes": [
     "the manual's sections document different argument counts; all accepted"
    ]
@@ -6048,7 +6048,7 @@
     19
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "farsummon": {
    "sections": [
@@ -6098,7 +6098,7 @@
     15
    ],
    "documented": true,
-   "attested": 101
+   "attested": 105
   },
   "fastheal": {
    "sections": [
@@ -6116,7 +6116,7 @@
     19
    ],
    "documented": true,
-   "attested": 31
+   "attested": 32
   },
   "fear": {
    "sections": [
@@ -6131,11 +6131,11 @@
      "types": [
       "int"
      ],
-     "optional": true
+     "optional": false
     }
    ],
    "arity": {
-    "min": 0,
+    "min": 1,
     "max": 1
    },
    "pages": [
@@ -6144,10 +6144,7 @@
     22
    ],
    "documented": true,
-   "attested": 139,
-   "notes": [
-    "manual shows 1 required arg(s); vanilla omits down to 0"
-   ]
+   "attested": 143
   },
   "female": {
    "sections": [
@@ -6165,7 +6162,7 @@
     19
    ],
    "documented": true,
-   "attested": 110
+   "attested": 114
   },
   "fewmonreq": {
    "sections": [
@@ -6265,7 +6262,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "fireres": {
    "sections": [
@@ -6291,7 +6288,7 @@
     20
    ],
    "documented": true,
-   "attested": 510
+   "attested": 515
   },
   "firstshape": {
    "sections": [
@@ -6355,7 +6352,7 @@
     15
    ],
    "documented": true,
-   "attested": 244
+   "attested": 254
   },
   "flying2": {
    "sections": [
@@ -6395,7 +6392,7 @@
     4
    ],
    "documented": true,
-   "attested": 268
+   "attested": 271
   },
   "flymode": {
    "sections": [
@@ -6419,7 +6416,7 @@
     4
    ],
    "documented": true,
-   "attested": 322
+   "attested": 326
   },
   "flysound": {
    "sections": [
@@ -6443,7 +6440,7 @@
     4
    ],
    "documented": true,
-   "attested": 318
+   "attested": 322
   },
   "followstupid": {
    "sections": [
@@ -6591,7 +6588,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "foreststealth": {
    "sections": [
@@ -6682,7 +6679,7 @@
     35
    ],
    "documented": true,
-   "attested": 179
+   "attested": 186
   },
   "frontpos": {
    "sections": [
@@ -6700,7 +6697,7 @@
     21
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "fullsweep": {
    "sections": [
@@ -6771,7 +6768,7 @@
     29
    ],
    "documented": true,
-   "attested": 54
+   "attested": 74
   },
   "fxreq": {
    "sections": [
@@ -6985,8 +6982,8 @@
    "documented": true,
    "attested": 21,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "gatherhands": {
@@ -7043,8 +7040,8 @@
    "documented": true,
    "attested": 28,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "gatherlifeforce": {
@@ -7117,8 +7114,8 @@
    "documented": true,
    "attested": 16,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "gatherweed": {
@@ -7205,7 +7202,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 7
   },
   "gold": {
    "sections": [
@@ -7234,7 +7231,7 @@
     29
    ],
    "documented": true,
-   "attested": 201
+   "attested": 202
   },
   "goldbonus": {
    "sections": [
@@ -7336,10 +7333,10 @@
    },
    "pages": [],
    "documented": false,
-   "attested": 15,
+   "attested": 45,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "growhp": {
@@ -7438,7 +7435,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "hadesres": {
    "sections": [
@@ -7464,7 +7461,7 @@
     19
    ],
    "documented": true,
-   "attested": 10
+   "attested": 11
   },
   "hadesshape": {
    "sections": [
@@ -7512,7 +7509,7 @@
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "hadeswander2": {
    "sections": [
@@ -7564,7 +7561,7 @@
     29
    ],
    "documented": true,
-   "attested": 65
+   "attested": 67
   },
   "hardfly": {
    "sections": [
@@ -7612,7 +7609,7 @@
     5
    ],
    "documented": true,
-   "attested": 81
+   "attested": 82
   },
   "harpyspawn": {
    "sections": [
@@ -7638,7 +7635,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 6
   },
   "harvest": {
    "sections": [
@@ -7730,7 +7727,7 @@
     19
    ],
    "documented": true,
-   "attested": 0
+   "attested": 15
   },
   "herbs": {
    "sections": [
@@ -7786,7 +7783,7 @@
     19
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "hoburg": {
    "sections": [
@@ -7959,7 +7956,7 @@
     27
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "horror": {
    "sections": [
@@ -8003,7 +8000,7 @@
     14
    ],
    "documented": true,
-   "attested": 1841
+   "attested": 1914
   },
   "hpoverflow": {
    "sections": [
@@ -8029,7 +8026,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "huge": {
    "sections": [
@@ -8049,7 +8046,7 @@
     15
    ],
    "documented": true,
-   "attested": 172
+   "attested": 176
   },
   "human": {
    "sections": [
@@ -8067,7 +8064,7 @@
     19
    ],
    "documented": true,
-   "attested": 376
+   "attested": 437
   },
   "humancost": {
    "sections": [
@@ -8160,7 +8157,7 @@
     15
    ],
    "documented": true,
-   "attested": 270
+   "attested": 272
   },
   "immortal": {
    "sections": [
@@ -8221,7 +8218,7 @@
     20
    ],
    "documented": true,
-   "attested": 500
+   "attested": 502
   },
   "incorporate": {
    "sections": [
@@ -8247,7 +8244,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 4
   },
   "indepitem": {
    "sections": [
@@ -8295,7 +8292,7 @@
     17
    ],
    "documented": true,
-   "attested": 12
+   "attested": 11
   },
   "infernoshape": {
    "sections": [
@@ -8367,7 +8364,7 @@
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 4
   },
   "init": {
    "sections": [
@@ -8391,7 +8388,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "insanity": {
    "sections": [
@@ -8452,7 +8449,7 @@
     30
    ],
    "documented": true,
-   "attested": 157
+   "attested": 160
   },
   "invseason": {
    "sections": [
@@ -8625,7 +8622,7 @@
     10
    ],
    "documented": true,
-   "attested": 68
+   "attested": 73
   },
   "jungle1": {
    "sections": [
@@ -8753,7 +8750,7 @@
     20
    ],
    "documented": true,
-   "attested": 14
+   "attested": 15
   },
   "lairgoldpen": {
    "sections": [
@@ -8779,7 +8776,7 @@
     20
    ],
    "documented": true,
-   "attested": 8
+   "attested": 12
   },
   "landshape": {
    "sections": [
@@ -8803,7 +8800,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "large": {
    "sections": [
@@ -8863,7 +8860,7 @@
     21
    ],
    "documented": true,
-   "attested": 17
+   "attested": 21
   },
   "level": {
    "sections": [
@@ -8892,7 +8889,7 @@
     34
    ],
    "documented": true,
-   "attested": 552
+   "attested": 583
   },
   "levelreq": {
    "sections": [
@@ -8945,7 +8942,7 @@
     34
    ],
    "documented": true,
-   "attested": 73
+   "attested": 75
   },
   "levelupmon": {
    "sections": [
@@ -8995,7 +8992,7 @@
     28
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "libmastery": {
    "sections": [
@@ -9019,7 +9016,7 @@
     17
    ],
    "documented": true,
-   "attested": 32
+   "attested": 39
   },
   "library1": {
    "sections": [
@@ -9095,7 +9092,7 @@
     29
    ],
    "documented": true,
-   "attested": 133
+   "attested": 135
   },
   "likescoast": {
    "sections": [
@@ -9119,7 +9116,7 @@
     27
    ],
    "documented": true,
-   "attested": 1
+   "attested": 2
   },
   "likesnorth": {
    "sections": [
@@ -9218,7 +9215,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "limitgold": {
    "sections": [
@@ -9296,7 +9293,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "lob": {
    "sections": [
@@ -9312,7 +9309,7 @@
     5
    ],
    "documented": true,
-   "attested": 15
+   "attested": 16
   },
   "localgoldbonus": {
    "sections": [
@@ -9338,7 +9335,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "localironbonus": {
    "sections": [
@@ -9364,7 +9361,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "localleadership": {
    "sections": [
@@ -9413,6 +9410,7 @@
   "look": {
    "sections": [
     "item",
+    "monster",
     "weapon"
    ],
    "signature": "<look>",
@@ -9434,7 +9432,7 @@
     11
    ],
    "documented": true,
-   "attested": 491
+   "attested": 497
   },
   "lookslike": {
    "sections": [
@@ -9501,7 +9499,7 @@
     21
    ],
    "documented": true,
-   "attested": 9
+   "attested": 10
   },
   "madcultist": {
    "sections": [
@@ -9678,7 +9676,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 5
   },
   "makediseased": {
    "sections": [
@@ -9750,7 +9748,7 @@
     36
    ],
    "documented": true,
-   "attested": 4
+   "attested": 5
   },
   "makeruin": {
    "sections": [
@@ -9825,17 +9823,39 @@
     "monster"
    ],
    "signature": "",
-   "args": [],
+   "args": [
+    {
+     "name": "arg1",
+     "types": [
+      "int"
+     ],
+     "optional": true,
+     "undocumented": true
+    },
+    {
+     "name": "0-1",
+     "types": [
+      "int",
+      "str"
+     ],
+     "optional": true,
+     "undocumented": true
+    }
+   ],
    "arity": {
     "min": 0,
-    "max": 0
+    "max": 1
    },
    "pages": [
     12,
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1,
+   "notes": [
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
+   ]
   },
   "mastery": {
    "sections": [
@@ -9859,7 +9879,7 @@
     17
    ],
    "documented": true,
-   "attested": 134
+   "attested": 143
   },
   "maxcast": {
    "sections": [
@@ -9883,7 +9903,7 @@
     34
    ],
    "documented": true,
-   "attested": 10
+   "attested": 11
   },
   "maxsinners": {
    "sections": [
@@ -9957,7 +9977,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 8
   },
   "meleeweapon": {
    "sections": [
@@ -9990,9 +10010,9 @@
     14
    ],
    "documented": true,
-   "attested": 1976,
+   "attested": 2058,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "meleeweapon50s": {
@@ -10028,7 +10048,7 @@
    "documented": true,
    "attested": 1,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "meleeweaponbonus": {
@@ -10062,9 +10082,9 @@
     14
    ],
    "documented": true,
-   "attested": 51,
+   "attested": 58,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "meleeweaponlong": {
@@ -10130,9 +10150,9 @@
     14
    ],
    "documented": true,
-   "attested": 36,
+   "attested": 40,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "melt": {
@@ -10159,7 +10179,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "melts": {
    "sections": [
@@ -10270,7 +10290,7 @@
     5
    ],
    "documented": true,
-   "attested": 65
+   "attested": 66
   },
   "mindexpl": {
    "sections": [
@@ -10298,7 +10318,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "mine": {
    "sections": [
@@ -10332,7 +10352,7 @@
     16
    ],
    "documented": true,
-   "attested": 34
+   "attested": 35
   },
   "minmonreq": {
    "sections": [
@@ -10406,7 +10426,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 7
   },
   "mirror": {
    "sections": [
@@ -10432,7 +10452,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 4
   },
   "mirrorammo": {
    "sections": [
@@ -10458,7 +10478,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 20
   },
   "mirrorimages": {
    "sections": [
@@ -10626,7 +10646,7 @@
     16
    ],
    "documented": true,
-   "attested": 7
+   "attested": 8
   },
   "monplayerreq": {
    "sections": [
@@ -10674,7 +10694,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 7
   },
   "montarg": {
    "sections": [
@@ -10746,7 +10766,7 @@
     14
    ],
    "documented": true,
-   "attested": 1779
+   "attested": 1851
   },
   "morale": {
    "sections": [
@@ -10875,7 +10895,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 7
   },
   "mountain": {
    "sections": [
@@ -10896,7 +10916,7 @@
     30
    ],
    "documented": true,
-   "attested": 83
+   "attested": 85
   },
   "mountain1": {
    "sections": [
@@ -10932,7 +10952,7 @@
     16
    ],
    "documented": true,
-   "attested": 46
+   "attested": 54
   },
   "movehome": {
    "sections": [
@@ -10968,8 +10988,8 @@
    "documented": true,
    "attested": 2,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "mr": {
@@ -10998,7 +11018,7 @@
     14
    ],
    "documented": true,
-   "attested": 1939,
+   "attested": 2013,
    "notes": [
     "the manual's sections document different argument counts; all accepted"
    ]
@@ -11087,7 +11107,7 @@
     29
    ],
    "documented": true,
-   "attested": 354
+   "attested": 356
   },
   "namesquare": {
    "sections": [
@@ -11135,7 +11155,7 @@
     22
    ],
    "documented": true,
-   "attested": 426
+   "attested": 430
   },
   "nearby1req": {
    "sections": [
@@ -11302,7 +11322,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 10
   },
   "newclass": {
    "sections": [
@@ -11320,7 +11340,7 @@
     27
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "newitem": {
    "sections": [
@@ -11346,7 +11366,7 @@
     40
    ],
    "documented": true,
-   "attested": 274
+   "attested": 287
   },
   "newlocplanes": {
    "sections": [
@@ -11396,7 +11416,7 @@
     13
    ],
    "documented": true,
-   "attested": 1779
+   "attested": 1851
   },
   "newrit": {
    "sections": [
@@ -11423,7 +11443,7 @@
     34
    ],
    "documented": true,
-   "attested": 117
+   "attested": 120
   },
   "newritpow": {
    "sections": [
@@ -11467,7 +11487,7 @@
     34
    ],
    "documented": true,
-   "attested": 552
+   "attested": 583
   },
   "newspell1": {
    "sections": [
@@ -11596,7 +11616,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "next": {
    "sections": [
@@ -11654,7 +11674,7 @@
     5
    ],
    "documented": true,
-   "attested": 73
+   "attested": 75
   },
   "nextdmg": {
    "sections": [
@@ -11678,7 +11698,7 @@
     5
    ],
    "documented": true,
-   "attested": 243
+   "attested": 247
   },
   "nexttoo": {
    "sections": [
@@ -11694,7 +11714,7 @@
     35
    ],
    "documented": true,
-   "attested": 6
+   "attested": 21
   },
   "nextwep": {
    "sections": [
@@ -11720,7 +11740,7 @@
     5
    ],
    "documented": true,
-   "attested": 170
+   "attested": 172
   },
   "nobootslots": {
    "sections": [
@@ -11777,16 +11797,38 @@
     "item"
    ],
    "signature": "",
-   "args": [],
+   "args": [
+    {
+     "name": "arg1",
+     "types": [
+      "int"
+     ],
+     "optional": true,
+     "undocumented": true
+    },
+    {
+     "name": "0-1",
+     "types": [
+      "int",
+      "str"
+     ],
+     "optional": true,
+     "undocumented": true
+    }
+   ],
    "arity": {
     "min": 0,
-    "max": 0
+    "max": 1
    },
    "pages": [
     10
    ],
    "documented": true,
-   "attested": 0
+   "attested": 6,
+   "notes": [
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
+   ]
   },
   "nodrown": {
    "sections": [
@@ -11802,7 +11844,7 @@
     31
    ],
    "documented": true,
-   "attested": 12
+   "attested": 38
   },
   "noeventvarreq": {
    "sections": [
@@ -11834,17 +11876,39 @@
     "monster"
    ],
    "signature": "",
-   "args": [],
+   "args": [
+    {
+     "name": "arg1",
+     "types": [
+      "int"
+     ],
+     "optional": true,
+     "undocumented": true
+    },
+    {
+     "name": "0-1",
+     "types": [
+      "int",
+      "str"
+     ],
+     "optional": true,
+     "undocumented": true
+    }
+   ],
    "arity": {
     "min": 0,
-    "max": 0
+    "max": 1
    },
    "pages": [
     12,
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 58,
+   "notes": [
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
+   ]
   },
   "nofemale": {
    "sections": [
@@ -11926,7 +11990,7 @@
     19
    ],
    "documented": true,
-   "attested": 443
+   "attested": 445
   },
   "noland": {
    "sections": [
@@ -11944,7 +12008,7 @@
     16
    ],
    "documented": true,
-   "attested": 19
+   "attested": 21
   },
   "noleader": {
    "sections": [
@@ -12259,7 +12323,7 @@
     19
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "noplanereq": {
    "sections": [
@@ -12309,7 +12373,7 @@
     34
    ],
    "documented": true,
-   "attested": 3
+   "attested": 4
   },
   "north1": {
    "sections": [
@@ -12359,7 +12423,7 @@
     21
    ],
    "documented": true,
-   "attested": 264
+   "attested": 266
   },
   "nosnowpen": {
    "sections": [
@@ -12393,7 +12457,7 @@
     35
    ],
    "documented": true,
-   "attested": 86
+   "attested": 102
   },
   "nostdrec": {
    "sections": [
@@ -12491,7 +12555,7 @@
     21
    ],
    "documented": true,
-   "attested": 240
+   "attested": 242
   },
   "oneshot": {
    "sections": [
@@ -12539,7 +12603,7 @@
     6
    ],
    "documented": true,
-   "attested": 49
+   "attested": 77
   },
   "ornext": {
    "sections": [
@@ -12691,7 +12755,7 @@
     30
    ],
    "documented": true,
-   "attested": 21
+   "attested": 22
   },
   "passwall": {
    "sections": [
@@ -12733,7 +12797,7 @@
     10
    ],
    "documented": true,
-   "attested": 57
+   "attested": 58
   },
   "petriaura": {
    "sections": [
@@ -12785,7 +12849,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 80
   },
   "pickupanimals": {
    "sections": [
@@ -12813,7 +12877,7 @@
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "pierceres": {
    "sections": [
@@ -12831,7 +12895,7 @@
     21
    ],
    "documented": true,
-   "attested": 512
+   "attested": 515
   },
   "planeloc": {
    "sections": [
@@ -13085,7 +13149,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "poisonres": {
    "sections": [
@@ -13111,7 +13175,7 @@
     21
    ],
    "documented": true,
-   "attested": 824
+   "attested": 829
   },
   "poisonspikes": {
    "sections": [
@@ -13161,7 +13225,7 @@
     29
    ],
    "documented": true,
-   "attested": 102
+   "attested": 104
   },
   "port": {
    "sections": [
@@ -13238,9 +13302,9 @@
     17
    ],
    "documented": true,
-   "attested": 332,
+   "attested": 339,
    "notes": [
-    "manual documents 1 arg(s); all vanilla uses pass up to 2"
+    "manual documents 1 argument(s); the data source passes up to 2"
    ]
   },
   "prebatweapon": {
@@ -13276,7 +13340,7 @@
    "documented": true,
    "attested": 29,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "primable": {
@@ -13511,7 +13575,7 @@
     33
    ],
    "documented": true,
-   "attested": 32
+   "attested": 34
   },
   "promplayer": {
    "sections": [
@@ -13560,7 +13624,7 @@
     10
    ],
    "documented": true,
-   "attested": 17
+   "attested": 18
   },
   "purple": {
    "sections": [
@@ -13626,7 +13690,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "raiseanimals": {
    "sections": [
@@ -13787,7 +13851,7 @@
     21
    ],
    "documented": true,
-   "attested": 97
+   "attested": 132
   },
   "randomloc": {
    "sections": [
@@ -13837,7 +13901,7 @@
     22
    ],
    "documented": true,
-   "attested": 19
+   "attested": 23
   },
   "randomrare": {
    "sections": [
@@ -13861,7 +13925,7 @@
     22
    ],
    "documented": true,
-   "attested": 53
+   "attested": 59
   },
   "randomweapon": {
    "sections": [
@@ -13934,7 +13998,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "rangedweapon": {
    "sections": [
@@ -13967,9 +14031,9 @@
     15
    ],
    "documented": true,
-   "attested": 210,
+   "attested": 226,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "rangedweapon25": {
@@ -14005,7 +14069,7 @@
    "documented": true,
    "attested": 2,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "rangedweapon50": {
@@ -14041,7 +14105,7 @@
    "documented": true,
    "attested": 27,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "rangedweapon50s": {
@@ -14077,7 +14141,7 @@
    "documented": true,
    "attested": 22,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "rangedweapon50x": {
@@ -14113,7 +14177,7 @@
    "documented": true,
    "attested": 1,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "rangedweaponbonus": {
@@ -14149,7 +14213,7 @@
    "documented": true,
    "attested": 128,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "rangepen": {
@@ -14166,7 +14230,7 @@
     6
    ],
    "documented": true,
-   "attested": 23
+   "attested": 24
   },
   "rank": {
    "sections": [
@@ -14192,7 +14256,7 @@
     14
    ],
    "documented": true,
-   "attested": 1796
+   "attested": 1869
   },
   "rare": {
    "sections": [
@@ -14224,7 +14288,7 @@
     35
    ],
    "documented": true,
-   "attested": 33
+   "attested": 34
   },
   "rarity": {
    "sections": [
@@ -14248,7 +14312,7 @@
     10
    ],
    "documented": true,
-   "attested": 274
+   "attested": 287
   },
   "realport": {
    "sections": [
@@ -14305,8 +14369,8 @@
    "documented": true,
    "attested": 9,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "rearpos": {
@@ -14325,7 +14389,7 @@
     21
    ],
    "documented": true,
-   "attested": 24
+   "attested": 26
   },
   "rebate": {
    "sections": [
@@ -14351,7 +14415,7 @@
     17
    ],
    "documented": true,
-   "attested": 0
+   "attested": 7
   },
   "rebatefx25": {
    "sections": [
@@ -14426,7 +14490,7 @@
     34
    ],
    "documented": true,
-   "attested": 68
+   "attested": 70
   },
   "rebateterr20": {
    "sections": [
@@ -14500,7 +14564,7 @@
     28
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "recherochance": {
    "sections": [
@@ -14524,7 +14588,7 @@
     28
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "reclimiter": {
    "sections": [
@@ -14549,7 +14613,7 @@
     28
    ],
    "documented": true,
-   "attested": 182
+   "attested": 194
   },
   "recterr": {
    "sections": [
@@ -14670,7 +14734,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "reformdestroy": {
    "sections": [
@@ -14767,7 +14831,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 14
   },
   "releaserate": {
    "sections": [
@@ -14819,7 +14883,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 12
   },
   "relics": {
    "sections": [
@@ -14861,7 +14925,7 @@
     5
    ],
    "documented": true,
-   "attested": 13
+   "attested": 15
   },
   "reload2": {
    "sections": [
@@ -14893,7 +14957,7 @@
     5
    ],
    "documented": true,
-   "attested": 5
+   "attested": 7
   },
   "reloadsnd": {
    "sections": [
@@ -15081,7 +15145,7 @@
     28
    ],
    "documented": true,
-   "attested": 7
+   "attested": 8
   },
   "resreq": {
    "sections": [
@@ -15194,7 +15258,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 26
   },
   "revertowner": {
    "sections": [
@@ -15255,8 +15319,8 @@
    "documented": true,
    "attested": 1,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "ritmaxrange": {
@@ -15307,7 +15371,7 @@
     32
    ],
    "documented": true,
-   "attested": 552
+   "attested": 583
   },
   "ritrebate": {
    "sections": [
@@ -15357,7 +15421,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 7
   },
   "sacr": {
    "sections": [
@@ -15381,7 +15445,7 @@
     29
    ],
    "documented": true,
-   "attested": 55
+   "attested": 57
   },
   "sacrscale": {
    "sections": [
@@ -15529,7 +15593,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 10
   },
   "savanna2": {
    "sections": [
@@ -15561,7 +15625,7 @@
     6
    ],
    "documented": true,
-   "attested": 19
+   "attested": 21
   },
   "scatterloc": {
    "sections": [
@@ -15661,7 +15725,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "scrycost": {
    "sections": [
@@ -15687,7 +15751,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "scryloc": {
    "sections": [
@@ -15821,7 +15885,7 @@
     31
    ],
    "documented": true,
-   "attested": 40
+   "attested": 41
   },
   "selectclass": {
    "sections": [
@@ -15846,7 +15910,7 @@
     27
    ],
    "documented": true,
-   "attested": 30
+   "attested": 31
   },
   "selectfx": {
    "sections": [
@@ -15986,7 +16050,7 @@
     29
    ],
    "documented": true,
-   "attested": 354
+   "attested": 356
   },
   "selectterrgroup": {
    "sections": [
@@ -16083,7 +16147,7 @@
     22
    ],
    "documented": true,
-   "attested": 49
+   "attested": 50
   },
   "setclassname": {
    "sections": [
@@ -16109,7 +16173,7 @@
     27
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "setcreator": {
    "sections": [
@@ -16241,7 +16305,7 @@
     27
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "setname": {
    "sections": [
@@ -16331,7 +16395,7 @@
     31
    ],
    "documented": true,
-   "attested": 51
+   "attested": 52
   },
   "setvar": {
    "sections": [
@@ -16393,7 +16457,7 @@
     22
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "shield": {
    "sections": [
@@ -16411,7 +16475,7 @@
     21
    ],
    "documented": true,
-   "attested": 209
+   "attested": 213
   },
   "shieldneg": {
    "sections": [
@@ -16453,7 +16517,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "shipmove": {
    "sections": [
@@ -16469,7 +16533,7 @@
     16
    ],
    "documented": true,
-   "attested": 1
+   "attested": 3
   },
   "shockaura": {
    "sections": [
@@ -16495,7 +16559,7 @@
     22
    ],
    "documented": true,
-   "attested": 5
+   "attested": 6
   },
   "shockres": {
    "sections": [
@@ -16521,7 +16585,7 @@
     21
    ],
    "documented": true,
-   "attested": 195
+   "attested": 196
   },
   "shrinkhp": {
    "sections": [
@@ -16571,7 +16635,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 22
   },
   "siegeweapon": {
    "sections": [
@@ -16604,9 +16668,9 @@
     15
    ],
    "documented": true,
-   "attested": 21,
+   "attested": 23,
    "notes": [
-    "arg 2 (weapon) documented as str, vanilla also passes int"
+    "argument 2 (weapon) is documented as str; the data source also passes int"
    ]
   },
   "simulacrum": {
@@ -16651,7 +16715,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "size1x1": {
    "sections": [
@@ -16683,7 +16747,7 @@
     21
    ],
    "documented": true,
-   "attested": 107
+   "attested": 109
   },
   "skyshape": {
    "sections": [
@@ -16795,7 +16859,7 @@
     21
    ],
    "documented": true,
-   "attested": 702
+   "attested": 705
   },
   "slimeshield": {
    "sections": [
@@ -16823,7 +16887,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "slow": {
    "sections": [
@@ -16841,7 +16905,7 @@
     15
    ],
    "documented": true,
-   "attested": 111
+   "attested": 116
   },
   "smoke": {
    "sections": [
@@ -16899,7 +16963,7 @@
     16
    ],
    "documented": true,
-   "attested": 74
+   "attested": 76
   },
   "snowok": {
    "sections": [
@@ -16941,7 +17005,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "snowstealth": {
    "sections": [
@@ -16999,7 +17063,7 @@
     4
    ],
    "documented": true,
-   "attested": 650
+   "attested": 655
   },
   "soundfx": {
    "sections": [
@@ -17024,7 +17088,7 @@
     37
    ],
    "documented": true,
-   "attested": 271
+   "attested": 300
   },
   "south1": {
    "sections": [
@@ -17084,7 +17148,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "spawn2d6mon": {
    "sections": [
@@ -17261,7 +17325,7 @@
     15
    ],
    "documented": true,
-   "attested": 497
+   "attested": 522
   },
   "spellweapon50": {
    "sections": [
@@ -17385,7 +17449,7 @@
     15
    ],
    "documented": true,
-   "attested": 2
+   "attested": 6
   },
   "spiritsight": {
    "sections": [
@@ -17403,7 +17467,7 @@
     19
    ],
    "documented": true,
-   "attested": 178
+   "attested": 179
   },
   "split": {
    "sections": [
@@ -17427,7 +17491,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "spr": {
    "sections": [
@@ -17743,7 +17807,7 @@
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "stdtroops": {
    "sections": [
@@ -17779,8 +17843,8 @@
    "documented": true,
    "attested": 9,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "stealth": {
@@ -17799,7 +17863,7 @@
     19
    ],
    "documented": true,
-   "attested": 90
+   "attested": 100
   },
   "stone": {
    "sections": [
@@ -17823,17 +17887,39 @@
     "monster"
    ],
    "signature": "",
-   "args": [],
+   "args": [
+    {
+     "name": "arg1",
+     "types": [
+      "int"
+     ],
+     "optional": true,
+     "undocumented": true
+    },
+    {
+     "name": "0-1",
+     "types": [
+      "int",
+      "str"
+     ],
+     "optional": true,
+     "undocumented": true
+    }
+   ],
    "arity": {
     "min": 0,
-    "max": 0
+    "max": 1
    },
    "pages": [
     12,
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 97,
+   "notes": [
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
+   ]
   },
   "stonekill": {
    "sections": [
@@ -17875,7 +17961,7 @@
     14
    ],
    "documented": true,
-   "attested": 1800
+   "attested": 1873
   },
   "stray": {
    "sections": [
@@ -17893,7 +17979,7 @@
     16
    ],
    "documented": true,
-   "attested": 0
+   "attested": 36
   },
   "strresist": {
    "sections": [
@@ -17927,7 +18013,7 @@
     16
    ],
    "documented": true,
-   "attested": 35
+   "attested": 55
   },
   "subeventvar": {
    "sections": [
@@ -17975,7 +18061,7 @@
     33
    ],
    "documented": true,
-   "attested": 36
+   "attested": 37
   },
   "sum0snow": {
    "sections": [
@@ -18023,7 +18109,7 @@
     33
    ],
    "documented": true,
-   "attested": 4
+   "attested": 8
   },
   "sum2chance": {
    "sections": [
@@ -18398,7 +18484,7 @@
     28
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "templerec": {
    "sections": [
@@ -18440,7 +18526,7 @@
     32
    ],
    "documented": true,
-   "attested": 318
+   "attested": 340
   },
   "terraformch": {
    "sections": [
@@ -18492,7 +18578,7 @@
     18
    ],
    "documented": true,
-   "attested": 2
+   "attested": 1
   },
   "terraformto": {
    "sections": [
@@ -18518,7 +18604,7 @@
     18
    ],
    "documented": true,
-   "attested": 5
+   "attested": 1
   },
   "terrboost": {
    "sections": [
@@ -18635,7 +18721,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 2
   },
   "tiny": {
    "sections": [
@@ -18667,7 +18753,7 @@
     31
    ],
    "documented": true,
-   "attested": 15
+   "attested": 16
   },
   "town2": {
    "sections": [
@@ -18707,7 +18793,7 @@
     28
    ],
    "documented": true,
-   "attested": 29
+   "attested": 30
   },
   "trade": {
    "sections": [
@@ -18735,7 +18821,7 @@
     29
    ],
    "documented": true,
-   "attested": 49
+   "attested": 50
   },
   "tradebonus": {
    "sections": [
@@ -18913,7 +18999,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "tree": {
    "sections": [
@@ -18971,7 +19057,7 @@
     4
    ],
    "documented": true,
-   "attested": 926
+   "attested": 935
   },
   "troll": {
    "sections": [
@@ -18979,17 +19065,39 @@
     "monster"
    ],
    "signature": "",
-   "args": [],
+   "args": [
+    {
+     "name": "arg1",
+     "types": [
+      "int"
+     ],
+     "optional": true,
+     "undocumented": true
+    },
+    {
+     "name": "0-1",
+     "types": [
+      "int",
+      "str"
+     ],
+     "optional": true,
+     "undocumented": true
+    }
+   ],
    "arity": {
     "min": 0,
-    "max": 0
+    "max": 1
    },
    "pages": [
     12,
     20
    ],
    "documented": true,
-   "attested": 0
+   "attested": 13,
+   "notes": [
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
+   ]
   },
   "trollifyloc": {
    "sections": [
@@ -19049,7 +19157,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 3
   },
   "turncastcount": {
    "sections": [
@@ -19073,7 +19181,7 @@
     34
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "twistfate": {
    "sections": [
@@ -19111,8 +19219,8 @@
    "documented": true,
    "attested": 2,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "type": {
@@ -19137,7 +19245,7 @@
     10
    ],
    "documented": true,
-   "attested": 274
+   "attested": 287
   },
   "ug": {
    "sections": [
@@ -19191,7 +19299,7 @@
     19
    ],
    "documented": true,
-   "attested": 211
+   "attested": 212
   },
   "undkill": {
    "sections": [
@@ -19241,7 +19349,7 @@
     21
    ],
    "documented": true,
-   "attested": 233
+   "attested": 235
   },
   "unique": {
    "sections": [
@@ -19438,8 +19546,8 @@
    "documented": true,
    "attested": 10,
    "notes": [
-    "manual documents 0 arg(s); all vanilla uses pass up to 1",
-    "manual documents this as a bare flag; the rips pass an explicit on/off value"
+    "manual documents 0 argument(s); the data source passes up to 1",
+    "manual documents this as a bare flag; the data source passes an explicit on/off value"
    ]
   },
   "visible": {
@@ -19582,7 +19690,7 @@
     23
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "wall": {
    "sections": [
@@ -19632,7 +19740,7 @@
     30
    ],
    "documented": true,
-   "attested": 143
+   "attested": 144
   },
   "wander": {
    "sections": [
@@ -19656,7 +19764,7 @@
     17
    ],
    "documented": true,
-   "attested": 33
+   "attested": 54
   },
   "wander2": {
    "sections": [
@@ -19705,7 +19813,7 @@
     17
    ],
    "documented": true,
-   "attested": 4
+   "attested": 16
   },
   "wandermaxdist": {
    "sections": [
@@ -19731,7 +19839,7 @@
     17
    ],
    "documented": true,
-   "attested": 8
+   "attested": 12
   },
   "wanderrest": {
    "sections": [
@@ -19757,7 +19865,7 @@
     17
    ],
    "documented": true,
-   "attested": 8
+   "attested": 12
   },
   "water": {
    "sections": [
@@ -19779,7 +19887,7 @@
     30
    ],
    "documented": true,
-   "attested": 549
+   "attested": 552
   },
   "wateronly": {
    "sections": [
@@ -19821,7 +19929,7 @@
     18
    ],
    "documented": true,
-   "attested": 0
+   "attested": 1
   },
   "weaponslots": {
    "sections": [
@@ -19837,7 +19945,7 @@
     21
    ],
    "documented": true,
-   "attested": 128
+   "attested": 132
   },
   "weed": {
    "sections": [
@@ -19915,7 +20023,7 @@
     30
    ],
    "documented": true,
-   "attested": 62
+   "attested": 63
   },
   "yellow": {
    "sections": [

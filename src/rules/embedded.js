@@ -47,7 +47,7 @@ function checkSummonList(raw, at, registry, bag) {
         rule: "summon-string",
         at,
         message: `unreadable count in "${entry.name}"`,
-        hint: "counts look like 3*, 2d6*, 2d4+2*, or c* for a commander",
+        hint: "counts look like 3*, 2d6*, 2d4+2*, c* for a commander, or a cap letter u/U/y/Y",
       });
       continue;
     }
