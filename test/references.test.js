@@ -102,3 +102,10 @@ test("reclimiter needs a sigil and a real monster", () => {
     ["reclimiter-string"],
   );
 });
+
+test("copy commands resolve against the kind the block defines", () => {
+  assertClean('newmonster "My Golem"\ncopyspr "Stone Golem"');
+  assertClean('newmonster "My Golem"\ncopystats "Stone Golem"');
+  assertClean('newitem "My Brand"\ncopyspr "Frost Brand"');
+  assert.deepEqual(rulesOf('newmonster "My Golem"\ncopyspr "No Such Beast"'), ["unknown-monster"]);
+});

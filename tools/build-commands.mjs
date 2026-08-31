@@ -186,6 +186,9 @@ function referenceKind(cmd, arg) {
   const n = arg.name;
   const str = arg.types.includes("str");
   if (DEFINES.has(cmd)) return null;
+  // `name` sets a new display name; its argument never points at an existing
+  // thing even though the manual writes the placeholder as "monster name".
+  if (cmd === "name") return null;
   if (cmd === "reclimiter") return "reclimiter";
   if (str && (cmd === "addstring" || cmd === "combatsum" || cmd === "newunits")) return "summon";
   if (/^(monster name|monster|from monster|to monster|commander's name)$/.test(n)) return "monster";
@@ -276,6 +279,44 @@ for (const name of [...names].sort()) {
 
   let arity = { min: args.filter((a) => !a.optional).length, max: args.length };
 
+  // A command can be documented once per section, and the sections can
+  // disagree: copyspr takes an item name on the item page and a monster name
+  // on the monster page; cureoneaff takes <chance> as a ritual and nothing as
+  // an event action. Widen across the per-section definitions instead of
+  // letting the best-scoring one speak for all of them.
+  const perSection = new Map();
+  for (const r of recs) {
+    // Only records on pages the index points at are definitions; a bare
+    // mention in a summary elsewhere parses as a zero-arg record and would
+    // widen everything it touches. Worked examples are not definitions either.
+    if (!(index[name] ?? []).includes(r.page)) continue;
+    if (/"[^"]*[A-Z]/.test(r.sig)) continue;
+    const key = pageSections(r.page).join("+");
+    const held = perSection.get(key);
+    if (!held || score(r) > score(held)) perSection.set(key, r);
+  }
+  const variants = [...perSection.entries()].map(([key, r]) => ({
+    sections: key.split("+"),
+    args: parseSignature(r.sig),
+  }));
+  if (variants.length > 1) {
+    const before = { ...arity };
+    for (const v of variants) {
+      const required = v.args.filter((a) => !a.optional).length;
+      if (required < arity.min) {
+        for (let i = required; i < args.length; i++) args[i].optional = true;
+        arity.min = required;
+      }
+      if (v.args.length > arity.max) {
+        for (let i = args.length; i < v.args.length; i++) args.push({ ...v.args[i], optional: true });
+        arity.max = v.args.length;
+      }
+    }
+    if (arity.min !== before.min || arity.max !== before.max) {
+      notes.push("the manual's sections document different argument counts; all accepted");
+    }
+  }
+
   // Merge policy: widen, never pick a winner. The manual and the rips are both
   // primary sources, and where they disagree the honest reading is that both
   // forms load. Every widening records a note so the disagreement stays visible
@@ -340,6 +381,21 @@ for (const name of [...names].sort()) {
   for (const a of args) {
     const kind = referenceKind(name, a);
     if (kind) a.ref = kind;
+  }
+
+  // Where the sections disagree about what a name argument refers to, and
+  // each section's reading points at its own kind, the argument refers to
+  // whatever the enclosing block defines.
+  if (variants.length > 1) {
+    args.forEach((a, i) => {
+      const refs = variants
+        .map((v) => ({ sections: v.sections, ref: v.args[i] ? referenceKind(name, v.args[i]) : null }))
+        .filter((x) => x.ref);
+      if (new Set(refs.map((x) => x.ref)).size > 1) {
+        if (refs.every((x) => x.sections.includes(x.ref))) a.ref = "self";
+        else delete a.ref;
+      }
+    });
   }
 
   commands[name] = {

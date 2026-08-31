@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-08-29",
+  "generated": "2026-08-31",
   "manual": "Illwinter CoE5 Modding Manual v5.36",
   "rips": "Colonel Dracula CoE5 data extraction v5.22",
   "commands": 852,
@@ -4473,7 +4473,7 @@
       "str"
      ],
      "optional": false,
-     "ref": "item"
+     "ref": "self"
     }
    ],
    "arity": {
@@ -4500,7 +4500,7 @@
       "str"
      ],
      "optional": false,
-     "ref": "item"
+     "ref": "self"
     }
    ],
    "arity": {
@@ -4641,11 +4641,11 @@
      "types": [
       "int"
      ],
-     "optional": false
+     "optional": true
     }
    ],
    "arity": {
-    "min": 1,
+    "min": 0,
     "max": 1
    },
    "pages": [
@@ -4653,7 +4653,10 @@
     40
    ],
    "documented": true,
-   "attested": 0
+   "attested": 0,
+   "notes": [
+    "the manual's sections document different argument counts; all accepted"
+   ]
   },
   "curseditem": {
    "sections": [
@@ -6016,7 +6019,7 @@
    "documented": true,
    "attested": 68,
    "notes": [
-    "manual shows 1 required arg(s); vanilla omits down to 0"
+    "the manual's sections document different argument counts; all accepted"
    ]
   },
   "farsightsea": {
@@ -10771,7 +10774,7 @@
    "documented": true,
    "attested": 7,
    "notes": [
-    "manual shows 1 required arg(s); vanilla omits down to 0"
+    "the manual's sections document different argument counts; all accepted"
    ]
   },
   "more1spells": {
@@ -10997,7 +11000,7 @@
    "documented": true,
    "attested": 1939,
    "notes": [
-    "manual shows 1 required arg(s); vanilla omits down to 0"
+    "the manual's sections document different argument counts; all accepted"
    ]
   },
   "multiplane": {
@@ -16343,18 +16346,28 @@
       "int"
      ],
      "optional": false
+    },
+    {
+     "name": "value",
+     "types": [
+      "int"
+     ],
+     "optional": true
     }
    ],
    "arity": {
     "min": 1,
-    "max": 1
+    "max": 2
    },
    "pages": [
     36,
     40
    ],
    "documented": true,
-   "attested": 2
+   "attested": 2,
+   "notes": [
+    "the manual's sections document different argument counts; all accepted"
+   ]
   },
   "shardexpl": {
    "sections": [

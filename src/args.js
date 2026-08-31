@@ -34,7 +34,10 @@ export function* describedArgs(statements) {
  */
 export function* referenceArgs(statements, kinds) {
   for (const found of describedArgs(statements)) {
-    if (found.arg.ref && kinds.includes(found.arg.ref)) yield found;
+    // `self` refers to whatever kind the enclosing block defines: copyspr
+    // copies from a monster in a monster block and an item in an item block.
+    const ref = found.arg.ref === "self" ? found.statement.section : found.arg.ref;
+    if (ref && kinds.includes(ref)) yield { ...found, arg: { ...found.arg, ref } };
   }
 }
 

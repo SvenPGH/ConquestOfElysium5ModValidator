@@ -6,6 +6,7 @@ import * as references from "./references.js";
 import * as values from "./values.js";
 import * as embedded from "./embedded.js";
 import * as classBlock from "./classBlock.js";
+import * as eventOrder from "./eventOrder.js";
 import * as manifest from "./manifest.js";
 
 /**
@@ -25,6 +26,7 @@ export const ruleModules = [
   values,
   embedded,
   classBlock,
+  eventOrder,
   manifest,
 ];
 
