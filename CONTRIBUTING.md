@@ -21,7 +21,12 @@ have to assemble it yourself:
 | file | where it comes from |
 |---|---|
 | `reference_coe5-modding-manual-v5_36.txt` | `pdftotext -layout` over `illwinter.com/coe5/coe5modding.pdf` |
-| `reference_{weapon,magic-item,monster,class,terrain,recruitment,ritual}-data-v5_22_c5m.txt` | Colonel Dracula's data extraction, `.c5m` renamed to `.txt` |
+| `{Weapon,Magic_Item,Monster,Class,Terrain,Recruitment,Ritual}_Data_v5.33.c5m` | Colonel Dracula's data extraction, original file names |
+
+The regression tests read the same files; point them elsewhere with the
+`COE5_REFERENCE` environment variable. `tools/build-commands.mjs` also accepts
+several reference directories separated by `:` when the manual and the rips
+live apart.
 
 The layout matters. `tools/build-commands.mjs` parses the manual as two columns
 and depends on `pdftotext -layout` output specifically; a markdown conversion of
