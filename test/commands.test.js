@@ -38,7 +38,7 @@ test("an offset outside the quotes gets its own hint", () => {
 });
 
 test("documented ranges are checked", () => {
-  assert.deepEqual(rulesOf('newritual "R"\nlevel 12'), ["arg-range"]);
+  assert.deepEqual(rulesOf('newritual "R"\nfree\nlevel 12'), ["arg-range"]);
   assertClean('newritual "R"\nlevel 3');
 });
 
