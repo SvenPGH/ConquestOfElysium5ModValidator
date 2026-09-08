@@ -7,6 +7,7 @@ import * as values from "./values.js";
 import * as embedded from "./embedded.js";
 import * as classBlock from "./classBlock.js";
 import * as eventOrder from "./eventOrder.js";
+import * as ritualBlock from "./ritualBlock.js";
 import * as manifest from "./manifest.js";
 
 /**
@@ -27,6 +28,7 @@ export const ruleModules = [
   embedded,
   classBlock,
   eventOrder,
+  ritualBlock,
   manifest,
 ];
 
