@@ -11,7 +11,7 @@ import { OPENERS } from "../sections.js";
  * that may already be free, and `copyritual` may copy the flag in.
  */
 
-export const levels = { "ritual-needs-free": "warning" };
+export const levels = { "ritual-needs-free": "error" };
 
 export function check({ statements }, bag) {
   let block = null;

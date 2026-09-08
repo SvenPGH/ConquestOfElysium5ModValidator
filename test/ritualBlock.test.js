@@ -34,6 +34,7 @@ test("the block ends where the next record starts", () => {
 test("the message points at the level line and explains the crash", () => {
   const problem = firstProblem('newritual "R"\nlevel 5');
   assert.equal(problem.rule, "ritual-needs-free");
+  assert.equal(problem.severity, "error", "a game crash is an error, not a style hint");
   assert.equal(problem.line, 2);
   assert.match(problem.message, /crash/i);
   assert.match(problem.hint, /free/);
